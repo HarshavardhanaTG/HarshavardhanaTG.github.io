@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-
 group :jekyll_plugins do
     gem 'classifier-reborn'
     gem 'jekyll'
@@ -22,10 +21,8 @@ group :jekyll_plugins do
     gem 'unicode_utils'
     gem 'webrick'
 end
-
 group :other_plugins do
     gem 'css_parser'
     gem 'feedjira'
     gem 'httparty'
 end
-

@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: BUILDING NEURO-ADAPTIVE INTERFACES 
+subtitle: Building accessible SPEECH and LANGUAGE technologies
 
 profile:
   align: right

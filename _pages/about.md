@@ -2,9 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle:
-Building accessible SPEECH and LANGUAGE technologies
-with neuromotor interfaces.
+subtitle: Building accessible SPEECH and LANGUAGE technologies with neuromotor interfaces.
 
 profile:
   align: right

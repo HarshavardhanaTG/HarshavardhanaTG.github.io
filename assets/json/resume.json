@@ -25,7 +25,7 @@
   "projects": [
     {
       "name": "Upperlimb EMG based interfaces for hand gesture and handwriting recognition",
-      "summary": "We are developing high bandwidth, low latency neuromuscular interfaces for interacting with computers and robots.",
+      "summary": "I am developing high bandwidth, low latency neuromuscular interfaces for interacting with computers and robots.",
       "highlights": ["Egocentric ML models"],
       "startDate": "",
       "endDate": "",
@@ -33,7 +33,7 @@
     },
     {
       "name": "Orofacial EMG based interfaces for speech recognition",
-      "summary": "We are developing EMG based speech interfaces to synthesize personalized audible speech for individuals who have lost speech articulators.",
+      "summary": "I am developing EMG based speech interfaces to synthesize personalized audible speech for individuals who have lost speech articulators.",
       "highlights": ["Egocentric ML models"],
       "startDate": "",
       "endDate": "",

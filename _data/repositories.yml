@@ -1,7 +1,9 @@
-## GitHub Repositories
+github_users:
+  - HarshavardhanaTG
+repo_description_lines_max: 3
 
-- [GeometryOFsEMG](https://github.com/HarshavardhanaTG/GeometryOFsEMG)
-- [wristEMG](https://github.com/HarshavardhanaTG/wristEMG)
-- [geometryOfOrofacialNeuromuscularSystem](https://github.com/HarshavardhanaTG/geometryOfOrofacialNeuromuscularSystem)
-- [emg2speech](https://github.com/HarshavardhanaTG/emg2speech)
-
+github_repos:
+  - HarshavardhanaTG/GeometryOFsEMG
+  - HarshavardhanaTG/wristEMG
+  - HarshavardhanaTG/geometryOfOrofacialNeuromuscularSystem
+  - HarshavardhanaTG/emg2speech

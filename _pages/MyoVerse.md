@@ -30,13 +30,13 @@ nav_order: 1
 }
 
 .grid-card img {
-  width: 80px;
-  height: 80px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 16px;
 }
 </style>
 
-## Explore MyoVerse
+## A unified platform for ELECTROMYOGRAPHY (EMG) datasets, models, and research tools.
 
 <div class="grid-2">
 

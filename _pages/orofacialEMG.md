@@ -21,7 +21,7 @@ Below are synchronized EMG-to-speech samples showing the audio output, correspon
   </audio>
 
   <video controls width="420">
-    <source src="/assets/audio/orofacial/1.mp4" type="video/mp4">
+    <source src="/assets/audio/orofacial/1a.mp4" type="video/mp4">
   </video>
 
   <p class="transcript">“The cushion feels tight again.”</p>
@@ -35,7 +35,7 @@ Below are synchronized EMG-to-speech samples showing the audio output, correspon
   </audio>
 
   <video controls width="420">
-    <source src="/assets/audio/orofacial/2.mp4" type="video/mp4">
+    <source src="/assets/audio/orofacial/2a.mp4" type="video/mp4">
   </video>
 
   <p class="transcript">“The pillow feels tight today.”</p>
@@ -45,11 +45,11 @@ Below are synchronized EMG-to-speech samples showing the audio output, correspon
   <h4>Sample 2</h4>
 
   <audio controls>
-    <source src="/assets/audio/orofacial/2.wav" type="audio/wav">
+    <source src="/assets/audio/orofacial/3.wav" type="audio/wav">
   </audio>
 
   <video controls width="420">
-    <source src="/assets/audio/orofacial/2.mp4" type="video/mp4">
+    <source src="/assets/audio/orofacial/3a.mp4" type="video/mp4">
   </video>
 
   <p class="transcript">“My shoulder feels softer tonight.”</p>
@@ -59,11 +59,11 @@ Below are synchronized EMG-to-speech samples showing the audio output, correspon
   <h4>Sample 2</h4>
 
   <audio controls>
-    <source src="/assets/audio/orofacial/2.wav" type="audio/wav">
+    <source src="/assets/audio/orofacial/4.wav" type="audio/wav">
   </audio>
 
   <video controls width="420">
-    <source src="/assets/audio/orofacial/2.mp4" type="video/mp4">
+    <source src="/assets/audio/orofacial/4a.mp4" type="video/mp4">
   </video>
 
   <p class="transcript">“My wrist is calming now.”</p>
@@ -73,11 +73,11 @@ Below are synchronized EMG-to-speech samples showing the audio output, correspon
   <h4>Sample 2</h4>
 
   <audio controls>
-    <source src="/assets/audio/orofacial/2.wav" type="audio/wav">
+    <source src="/assets/audio/orofacial/5.wav" type="audio/wav">
   </audio>
 
   <video controls width="420">
-    <source src="/assets/audio/orofacial/2.mp4" type="video/mp4">
+    <source src="/assets/audio/orofacial/5a.mp4" type="video/mp4">
   </video>
 
   <p class="transcript">“My chest feels sore again.”</p>

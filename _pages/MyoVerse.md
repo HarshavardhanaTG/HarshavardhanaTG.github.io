@@ -30,7 +30,7 @@ nav_order: 1
 }
 
 .grid-card img {
-  width: 150px;
+  width: 160px;
   height: 150px;
   margin-bottom: 16px;
 }

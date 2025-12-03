@@ -40,13 +40,13 @@ nav_order: 1
 
 <div class="grid-2">
 
-  <a href="/Upperlimb electromyography/" class="grid-card">
+  <a href="/upperlimbEMG/" class="grid-card">
     <img src="/assets/icons/upperlimb.png" alt="Upperlimb EMG icon">
     <h3>Upperlimb EMG</h3>
     <p>Wrist and hand EMG datasets with processing pipelines.</p>
   </a>
 
-  <a href="/Orofacial electromyography/" class="grid-card">
+  <a href="/orofacialEMG/" class="grid-card">
     <img src="/assets/icons/orofacial.png" alt="Orofacial EMG icon">
     <h3>Orofacial EMG</h3>
     <p>Orofacial EMG with processing pipelines.</p>

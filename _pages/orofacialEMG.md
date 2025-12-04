@@ -12,3 +12,10 @@ We present a full EMG-to-Speech pipeline for an ALS subject using a small langua
 **See full pipeline, explanation, and samples here:**  
 [**EMG-to-Speech Page →**](/emg2speechALS/)
 
+## 👉 emg2speech demonstration for a healthy subject
+
+We present a full EMG-to-Speech pipeline for a healthy subject using a general language corpus.
+
+**See full pipeline, explanation, and samples here:**  
+[**EMG-to-Speech Page →**](/emg2speechHealthy/)
+

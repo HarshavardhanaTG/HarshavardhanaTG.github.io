@@ -14,11 +14,11 @@ A patient with amyotrophic lateral sclerosis (ALS) silently articulated a set of
 
 1. Silent EMG Recording
 
-The patient articulates sentences without producing audible sound. Only orofacial EMG is captured.
+    The patient articulates sentences without producing audible sound. Only orofacial EMG is captured.
 
 2. Reference Audio Generation
 
-For each transcript, we generate clean reference audio using Google Text-to-Speech (TTS).
+    For each transcript, we generate clean reference audio using Google Text-to-Speech (TTS).
 
 3. Discrete Speech Unit Extraction (HuBERT)
 
@@ -28,7 +28,7 @@ For each transcript, we generate clean reference audio using Google Text-to-Spee
 
 5. Neural Vocoder Synthesis
 
-A pretrained vocoder converts the predicted HuBERT unit sequences into intelligible audio.
+    A pretrained vocoder converts the predicted HuBERT unit sequences into intelligible audio.
 
 The model is trained on 40 minutes of EMG data.
 

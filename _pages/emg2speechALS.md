@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Orofacial EMG
+title: emg2speech demo
 permalink: /emg2speechALS/
 nav: false
 ---

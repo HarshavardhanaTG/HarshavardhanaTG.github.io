@@ -49,7 +49,7 @@ nav_order: 1
   <a href="/orofacialEMG/" class="grid-card">
     <img src="/assets/icons/orofacial.png" alt="Orofacial EMG icon">
     <h3>Orofacial EMG</h3>
-    <p>Orofacial EMG with processing pipelines.</p>
+    <p>Orofacial EMG datasets with processing pipelines.</p>
   </a>
 
 </div>

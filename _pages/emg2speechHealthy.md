@@ -39,7 +39,7 @@ We never make use of any audio or visual cues from the subject. We only use EMG,
 ### Samples
 
 <div class="sample-card">
-  <p class="big-transcript">“The cushion feels tight again.”</p>
+  <p class="big-transcript">“People find ways around.”</p>
 
   <audio controls class="small-player">
     <source src="/assets/audio/orofacial/1B.wav" type="audio/wav">
@@ -52,7 +52,7 @@ We never make use of any audio or visual cues from the subject. We only use EMG,
 
 
 <div class="sample-card">
-  <p class="big-transcript">“The pillow feels tight today.”</p>
+  <p class="big-transcript">“You knock people down.”</p>
 
   <audio controls class="small-player">
     <source src="/assets/audio/orofacial/2B.wav" type="audio/wav">
@@ -65,7 +65,7 @@ We never make use of any audio or visual cues from the subject. We only use EMG,
 
 
 <div class="sample-card">
-  <p class="big-transcript">“My shoulder feels softer tonight.”</p>
+  <p class="big-transcript">“And then you sprinkle the cheese on top of that.”</p>
 
   <audio controls class="small-player">
     <source src="/assets/audio/orofacial/3B.wav" type="audio/wav">
@@ -78,7 +78,7 @@ We never make use of any audio or visual cues from the subject. We only use EMG,
 
 
 <div class="sample-card">
-  <p class="big-transcript">“My wrist is calming now.”</p>
+  <p class="big-transcript">“I make that once in a while.”</p>
 
   <audio controls class="small-player">
     <source src="/assets/audio/orofacial/4B.wav" type="audio/wav">
@@ -91,7 +91,7 @@ We never make use of any audio or visual cues from the subject. We only use EMG,
 
 
 <div class="sample-card">
-  <p class="big-transcript">“My chest feels sore again.”</p>
+  <p class="big-transcript">“I don't have a lot of time.”</p>
 
   <audio controls class="small-player">
     <source src="/assets/audio/orofacial/5B.wav" type="audio/wav">

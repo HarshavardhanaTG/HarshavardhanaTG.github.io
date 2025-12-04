@@ -5,7 +5,7 @@ permalink: /orofacialEMG/
 nav: false
 ---
 
-## emg2speech demonstration for ALS subject
+## 👉 emg2speech demonstration for ALS subject
 
 We present a full EMG-to-Speech pipeline for an ALS subject using a small language corpus.
 

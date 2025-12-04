@@ -7,8 +7,8 @@ nav: false
 
 ## emg2speech
 
-## **EMG-to-Speech pipeline overview (ALS subject, small language-corpora):**
----
+**EMG-to-Speech pipeline overview** --- (ALS subject, small language-corpora)
+
 
 A patient with amyotrophic lateral sclerosis (ALS) silently articulated a set of sentences while orofacial EMG was recorded. We convert these EMG signals into synthetic speech using the following pipeline:
 

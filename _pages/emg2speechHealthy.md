@@ -33,6 +33,7 @@ The model is trained on nearly 8 hours of EMG data. The language corpora consist
 Note: The audio and video in the examples are not synchronized.
 This is expected because EMG-to-speech generation operates on discrete HuBERT units trained with CTC loss, which do not preserve sample-accurate timing alignment.
 We never make use of any audio or visual cues from the subject. We only use EMG, and directly convert EMG-to-audio.
+
 ---
 
 ### Samples

@@ -8,11 +8,11 @@ nav: false
 **EMG-to-Speech pipeline overview** --- (ALS subject, small language-corpora):
 
 
-A patient with amyotrophic lateral sclerosis (ALS) silently articulated a set of sentences while orofacial EMG was recorded. We convert these EMG signals into synthetic speech using the following pipeline:
+A subject with amyotrophic lateral sclerosis (ALS) silently articulated a set of sentences while orofacial EMG was recorded. We convert these EMG signals into synthetic speech using the following pipeline:
 
 1. Silent EMG Recording
 
-    The patient articulates sentences without producing audible sound. Only orofacial EMG is captured.
+    The subject articulates sentences without producing audible sound. Only orofacial EMG is captured.
 
 2. Reference Audio Generation
 
@@ -22,13 +22,14 @@ A patient with amyotrophic lateral sclerosis (ALS) silently articulated a set of
 
     We extract discrete HuBERT units from the reference audio.
 
-    A neural model is trained to predict these HuBERT units directly from EMG.
+    A neural network is trained to predict these HuBERT units directly from EMG.
 
 5. Neural Vocoder Synthesis
 
     A pretrained vocoder converts the predicted HuBERT unit sequences into intelligible audio.
 
 The model is trained on 40 minutes of EMG data. The language corpora consists of around 300 unique words and 600 sentences.
+Sentences in the test and validation sets are not present in the train set.
 
 Note: The audio and video in the examples are not synchronized.
 This is expected because EMG-to-speech generation operates on discrete HuBERT units trained with CTC loss, which do not preserve sample-accurate timing alignment.

@@ -22,13 +22,14 @@ A healthy subject articulated a set of sentences while orofacial EMG was recorde
 
     We extract discrete HuBERT units from the reference audio.
 
-    A neural model is trained to predict these HuBERT units directly from EMG.
+    A neural network is trained to predict these HuBERT units directly from EMG.
 
 5. Neural Vocoder Synthesis
 
     A pretrained vocoder converts the predicted HuBERT unit sequences into intelligible audio.
 
 The model is trained on nearly 8 hours of EMG data. The language corpora consists of around 6500 unique words and 10000 sentences.
+Sentences in the test and validation sets are not present in the train set.
 
 Note: The audio and video in the examples are not synchronized.
 This is expected because EMG-to-speech generation operates on discrete HuBERT units trained with CTC loss, which do not preserve sample-accurate timing alignment.

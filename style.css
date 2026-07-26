@@ -57,8 +57,7 @@ a:hover {
 }
 
 .site-header {
-  max-width: 1100px;
-  margin: 0 auto;
+  width: 100%;
   padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
@@ -94,7 +93,8 @@ a:hover {
 .site-header nav a.nav-link {
   font-family: var(--serif);
   font-weight: 400;
-  font-size: 0.95rem;
+  font-size: 1rem;
+  font-variant-caps: small-caps;
 }
 
 main {

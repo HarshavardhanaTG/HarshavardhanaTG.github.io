@@ -18,26 +18,6 @@
   src: url("/assets/fonts/EBGaramond-Italic-wght.woff2?v=24") format("woff2");
 }
 
-/* Lora: free open-source stand-in for Granville (the paragraph font on
-   kaylolittlejohn.com) — Granville itself is a paid Adobe/Font Bureau
-   font and isn't legally redistributable, so this is the closest
-   self-hostable match: a warm, literary book-text serif. */
-@font-face {
-  font-family: "Lora";
-  font-style: normal;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url("/assets/fonts/Lora-wght.woff2?v=1") format("woff2");
-}
-
-@font-face {
-  font-family: "Lora";
-  font-style: italic;
-  font-weight: 400 700;
-  font-display: swap;
-  src: url("/assets/fonts/Lora-Italic-wght.woff2?v=1") format("woff2");
-}
-
 :root {
   --text: #ffffff;
   --text-light: #a3a3a3;
@@ -47,8 +27,6 @@
   --serif: "EB Garamond", Garamond, "Times New Roman", serif;
   /* section headers: TeX Gyre Heros in the CV is a Helvetica clone */
   --sans: "Helvetica Neue", Helvetica, Arial, "TeX Gyre Heros", sans-serif;
-  /* stand-in for Granville, the paragraph font on kaylolittlejohn.com */
-  --body-serif: "Lora", Georgia, "Times New Roman", serif;
 }
 
 * {
@@ -84,9 +62,9 @@ body.has-bg {
 }
 
 .home-statement p {
-  font-family: var(--body-serif);
+  font-family: var(--serif);
   font-size: 1.1rem;
-  font-weight: 400;
+  font-weight: 700;
   text-align: justify;
   margin: 0;
 }

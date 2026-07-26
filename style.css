@@ -64,13 +64,15 @@ body.has-bg {
 .home-statement p {
   font-family: var(--serif);
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 400;
   text-align: justify;
+  -webkit-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
   margin: 0;
 }
 
 .home-statement .statement-emphasis {
-  font-weight: 700;
   font-style: italic;
 }
 

@@ -3,7 +3,7 @@
 layout: page
 title: MyoVerse
 permalink: /MyoVerse/
-nav: true
+nav: false
 nav_order: 1
 subtitle: DATASETS and CODEBASES.
 

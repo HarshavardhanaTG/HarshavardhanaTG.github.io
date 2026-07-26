@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 400 800;
   font-display: swap;
-  src: url("/assets/fonts/EBGaramond-wght.woff2?v=6") format("woff2");
+  src: url("/assets/fonts/EBGaramond-wght.woff2?v=7") format("woff2");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-style: italic;
   font-weight: 400 800;
   font-display: swap;
-  src: url("/assets/fonts/EBGaramond-Italic-wght.woff2?v=6") format("woff2");
+  src: url("/assets/fonts/EBGaramond-Italic-wght.woff2?v=7") format("woff2");
 }
 
 :root {
@@ -81,7 +81,8 @@ a:hover {
 .brand-subtitle {
   font-family: var(--serif);
   color: var(--text-light);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
+  font-weight: 700;
   font-style: italic;
   margin: 0;
 }

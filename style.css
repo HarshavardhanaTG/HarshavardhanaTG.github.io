@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 400 800;
   font-display: swap;
-  src: url("/assets/fonts/EBGaramond-wght.woff2?v=11") format("woff2");
+  src: url("/assets/fonts/EBGaramond-wght.woff2?v=12") format("woff2");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-style: italic;
   font-weight: 400 800;
   font-display: swap;
-  src: url("/assets/fonts/EBGaramond-Italic-wght.woff2?v=11") format("woff2");
+  src: url("/assets/fonts/EBGaramond-Italic-wght.woff2?v=12") format("woff2");
 }
 
 :root {
@@ -183,6 +183,10 @@ h1.page-title {
 
 .pub-authors {
   margin: 0;
+}
+
+.pub-authors .self-author {
+  font-size: 1.15em;
 }
 
 .pub-authors .coauthors {

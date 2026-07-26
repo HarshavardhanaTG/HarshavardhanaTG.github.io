@@ -186,23 +186,10 @@ h1.page-title {
 
 .pub-venue {
   margin: 0;
+}
+
+.pub-venue em {
   font-style: italic;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  justify-content: space-between;
-  gap: 0.4rem 1rem;
-}
-
-.pub-venue .links {
-  font-style: normal;
-  font-family: var(--sans);
-  font-size: 0.8rem;
-  white-space: nowrap;
-}
-
-.pub-venue .links a {
-  margin-left: 0.6rem;
 }
 
 footer.site-footer {

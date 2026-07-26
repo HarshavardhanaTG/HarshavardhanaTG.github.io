@@ -19,11 +19,11 @@
 }
 
 :root {
-  --text: #1a1a1a;
-  --text-light: #6b6b6b;
-  --accent: #5b4fe0;
-  --bg: #ffffff;
-  --border: rgba(0, 0, 0, 0.08);
+  --text: #ffffff;
+  --text-light: #a3a3a3;
+  --accent: #8f7dff;
+  --bg: #000000;
+  --border: rgba(255, 255, 255, 0.15);
   --serif: "EB Garamond", Garamond, "Times New Roman", serif;
   /* section headers: TeX Gyre Heros in the CV is a Helvetica clone */
   --sans: "Helvetica Neue", Helvetica, Arial, "TeX Gyre Heros", sans-serif;

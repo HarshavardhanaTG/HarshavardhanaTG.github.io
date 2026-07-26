@@ -4,9 +4,8 @@
   --accent: #5b4fe0;
   --bg: #ffffff;
   --border: rgba(0, 0, 0, 0.08);
-  --serif: "Cormorant Garamond", Garamond, "Times New Roman", serif;
-  /* section headers: TeX Gyre Heros in the CV is a Helvetica clone */
-  --sans: "Helvetica Neue", Helvetica, Arial, "TeX Gyre Heros", sans-serif;
+  --serif: "Courier Prime", Courier, monospace;
+  --sans: "Courier Prime", Courier, monospace;
 }
 
 * {
@@ -22,8 +21,8 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--serif);
-  font-size: 1.25rem;
-  font-weight: 500;
+  font-size: 1.05rem;
+  font-weight: 400;
   line-height: 1.7;
 }
 
@@ -37,9 +36,9 @@ a:hover {
 }
 
 .site-header {
-  max-width: 720px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -48,9 +47,8 @@ a:hover {
 .site-header .brand {
   font-family: var(--serif);
   color: var(--text);
-  font-weight: 600;
-  font-size: 1.2rem;
-  letter-spacing: 0.01em;
+  font-weight: 700;
+  font-size: 1rem;
   margin-right: auto;
 }
 
@@ -73,9 +71,9 @@ a:hover {
 }
 
 main {
-  max-width: 640px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem 1rem 4rem;
+  padding: 2rem 2rem 4rem;
 }
 
 /* Home page */
@@ -86,17 +84,16 @@ main {
 
 .home-name {
   font-family: var(--serif);
-  font-size: 3rem;
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  font-size: 2rem;
+  font-weight: 700;
   margin: 0 0 0.6rem;
 }
 
 .home-subtitle {
   font-family: var(--serif);
   color: var(--text-light);
-  font-size: 1.15rem;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 400;
   font-style: italic;
   margin: 0;
 }
@@ -196,9 +193,9 @@ h1.page-title {
 }
 
 footer.site-footer {
-  max-width: 640px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 2rem 1rem 3rem;
+  padding: 2rem 2rem 3rem;
   font-family: var(--serif);
   color: var(--text-light);
   font-size: 0.9rem;

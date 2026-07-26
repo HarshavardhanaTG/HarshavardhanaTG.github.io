@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 400 800;
   font-display: swap;
-  src: url("/assets/fonts/EBGaramond-wght.woff2?v=2") format("woff2");
+  src: url("/assets/fonts/EBGaramond-wght.woff2?v=3") format("woff2");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-style: italic;
   font-weight: 400 800;
   font-display: swap;
-  src: url("/assets/fonts/EBGaramond-Italic-wght.woff2?v=2") format("woff2");
+  src: url("/assets/fonts/EBGaramond-Italic-wght.woff2?v=3") format("woff2");
 }
 
 :root {
@@ -60,16 +60,29 @@ a:hover {
   width: 100%;
   padding: 1.5rem 2rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.5rem;
 }
 
+.brand-block {
+  margin-right: auto;
+}
+
 .site-header .brand {
+  display: inline-block;
   font-family: var(--serif);
   color: var(--text);
   font-weight: 700;
   font-size: 1.15rem;
-  margin-right: auto;
+  margin-bottom: 0.35rem;
+}
+
+.brand-subtitle {
+  font-family: var(--serif);
+  color: var(--text-light);
+  font-size: 0.95rem;
+  font-style: italic;
+  margin: 0;
 }
 
 .site-header nav {
@@ -94,34 +107,13 @@ a:hover {
   font-family: var(--serif);
   font-weight: 400;
   font-size: 1rem;
+  text-transform: none;
   font-variant-caps: small-caps;
 }
 
 main {
   width: 100%;
   padding: 2rem 2rem 4rem;
-}
-
-/* Home page */
-.home-header {
-  text-align: left;
-  margin-bottom: 2.5rem;
-}
-
-.home-name {
-  font-family: var(--serif);
-  font-size: 2.6rem;
-  font-weight: 700;
-  margin: 0 0 0.6rem;
-}
-
-.home-subtitle {
-  font-family: var(--serif);
-  color: var(--text-light);
-  font-size: 1.1rem;
-  font-weight: 400;
-  font-style: italic;
-  margin: 0;
 }
 
 /* Interior pages */

@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 400 800;
   font-display: swap;
-  src: url("/assets/fonts/EBGaramond-wght.woff2?v=12") format("woff2");
+  src: url("/assets/fonts/EBGaramond-wght.woff2?v=13") format("woff2");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-style: italic;
   font-weight: 400 800;
   font-display: swap;
-  src: url("/assets/fonts/EBGaramond-Italic-wght.woff2?v=12") format("woff2");
+  src: url("/assets/fonts/EBGaramond-Italic-wght.woff2?v=13") format("woff2");
 }
 
 :root {
@@ -50,6 +50,18 @@ body {
 body.has-bg {
   position: relative;
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.home-statement {
+  margin-top: auto;
+  padding: 2rem;
+  max-width: 700px;
+}
+
+.home-statement p {
+  margin: 0;
 }
 
 body.has-bg::before {

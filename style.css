@@ -4,9 +4,10 @@
   --accent: #5b4fe0;
   --bg: #ffffff;
   --border: rgba(0, 0, 0, 0.08);
-  --serif: "EB Garamond", Georgia, "Times New Roman", serif;
-  --sans:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+  /* body/roman: EB Garamond, matching the \usepackage{ebgaramond} CV */
+  --serif: "EB Garamond", Garamond, "Times New Roman", serif;
+  /* section headers: TeX Gyre Heros in the CV is a Helvetica clone */
+  --sans: "Helvetica Neue", Helvetica, Arial, "TeX Gyre Heros", sans-serif;
 }
 
 * {
@@ -63,7 +64,6 @@ a:hover {
   color: var(--text);
   font-weight: 700;
   font-size: 0.8rem;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
@@ -91,10 +91,10 @@ main {
 }
 
 .home-subtitle {
-  font-family: var(--sans);
+  font-family: var(--serif);
   color: var(--text-light);
-  font-size: 0.95rem;
-  letter-spacing: 0.02em;
+  font-size: 1rem;
+  font-style: italic;
   margin: 0;
 }
 
@@ -122,7 +122,6 @@ h1.page-title {
   font-family: var(--sans);
   font-size: 1rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
   text-transform: uppercase;
   margin-bottom: 1.75rem;
 }
@@ -131,7 +130,6 @@ h1.page-title {
   font-family: var(--sans);
   font-size: 0.85rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
   text-transform: uppercase;
   margin: 2rem 0 0.75rem;
 }
@@ -149,7 +147,8 @@ h1.page-title {
   font-style: italic;
 }
 
-/* Publications */
+/* Publications — mirrors the CV's \pub macro: year label column, then
+   the author line, then title + venue indented one further step in */
 .pub {
   display: flex;
   gap: 1.25rem;
@@ -164,17 +163,21 @@ h1.page-title {
 
 .pub-year {
   flex-shrink: 0;
-  width: 3rem;
-  color: var(--text-light);
+  width: 3.5rem;
+  color: var(--text);
 }
 
-.pub-body {
+.pub-main {
   flex: 1;
   min-width: 0;
 }
 
 .pub-authors {
-  margin: 0 0 0.15rem;
+  margin: 0;
+}
+
+.pub-details {
+  margin: 0.15rem 0 0 3.5rem;
 }
 
 .pub-title {
@@ -184,24 +187,29 @@ h1.page-title {
 .pub-venue {
   margin: 0;
   font-style: italic;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.4rem 1rem;
 }
 
 .pub-venue .links {
   font-style: normal;
   font-family: var(--sans);
   font-size: 0.8rem;
-  letter-spacing: 0.02em;
+  white-space: nowrap;
 }
 
 .pub-venue .links a {
-  margin-left: 0.5rem;
+  margin-left: 0.6rem;
 }
 
 footer.site-footer {
   max-width: 640px;
   margin: 0 auto;
   padding: 2rem 1rem 3rem;
-  font-family: var(--sans);
+  font-family: var(--serif);
   color: var(--text-light);
-  font-size: 0.8rem;
+  font-size: 0.9rem;
 }

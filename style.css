@@ -7,7 +7,7 @@
   font-style: normal;
   font-weight: 400 800;
   font-display: swap;
-  src: url("/assets/fonts/EBGaramond-wght.woff2?v=5") format("woff2");
+  src: url("/assets/fonts/EBGaramond-wght.woff2?v=6") format("woff2");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
   font-style: italic;
   font-weight: 400 800;
   font-display: swap;
-  src: url("/assets/fonts/EBGaramond-Italic-wght.woff2?v=5") format("woff2");
+  src: url("/assets/fonts/EBGaramond-Italic-wght.woff2?v=6") format("woff2");
 }
 
 :root {
@@ -187,6 +187,10 @@ h1.page-title {
 
 .pub-venue em {
   font-style: italic;
+}
+
+.pub a {
+  color: var(--text);
 }
 
 .pub-link {

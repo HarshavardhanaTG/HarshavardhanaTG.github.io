@@ -4,8 +4,7 @@
   --accent: #5b4fe0;
   --bg: #ffffff;
   --border: rgba(0, 0, 0, 0.08);
-  /* body/roman: EB Garamond, matching the \usepackage{ebgaramond} CV */
-  --serif: "EB Garamond", Garamond, "Times New Roman", serif;
+  --serif: "Cormorant Garamond", Garamond, "Times New Roman", serif;
   /* section headers: TeX Gyre Heros in the CV is a Helvetica clone */
   --sans: "Helvetica Neue", Helvetica, Arial, "TeX Gyre Heros", sans-serif;
 }
@@ -23,8 +22,9 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--serif);
-  font-size: 1.15rem;
-  line-height: 1.6;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.7;
 }
 
 a {
@@ -48,8 +48,9 @@ a:hover {
 .site-header .brand {
   font-family: var(--serif);
   color: var(--text);
-  font-weight: 700;
-  font-size: 1.1rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  letter-spacing: 0.01em;
   margin-right: auto;
 }
 
@@ -85,15 +86,17 @@ main {
 
 .home-name {
   font-family: var(--serif);
-  font-size: 2.4rem;
-  font-weight: 700;
-  margin: 0 0 0.5rem;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  margin: 0 0 0.6rem;
 }
 
 .home-subtitle {
   font-family: var(--serif);
   color: var(--text-light);
-  font-size: 1rem;
+  font-size: 1.15rem;
+  font-weight: 500;
   font-style: italic;
   margin: 0;
 }

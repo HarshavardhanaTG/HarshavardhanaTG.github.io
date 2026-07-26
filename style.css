@@ -124,24 +124,6 @@ main {
   margin: 0;
 }
 
-.home-intro p {
-  margin-bottom: 1.25rem;
-}
-
-.home-intro p:last-child {
-  margin-bottom: 0;
-}
-
-.home-photo {
-  margin-top: 3rem;
-}
-
-.home-photo img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 /* Interior pages */
 h1.page-title {
   font-family: var(--sans);

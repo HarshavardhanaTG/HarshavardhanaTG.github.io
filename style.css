@@ -1,11 +1,32 @@
+/* Self-hosted so the font actually loads — no dependency on an external
+   font CDN that can be blocked, offline, or served without variable-font
+   support. Real EB Garamond files from the same source as the CV's
+   \usepackage{ebgaramond}, covering weight 400–800 in one variable file. */
+@font-face {
+  font-family: "EB Garamond";
+  font-style: normal;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("/assets/fonts/EBGaramond-wght.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "EB Garamond";
+  font-style: italic;
+  font-weight: 400 800;
+  font-display: swap;
+  src: url("/assets/fonts/EBGaramond-Italic-wght.woff2") format("woff2");
+}
+
 :root {
   --text: #1a1a1a;
   --text-light: #6b6b6b;
   --accent: #5b4fe0;
   --bg: #ffffff;
   --border: rgba(0, 0, 0, 0.08);
-  --serif: "Courier Prime", Courier, monospace;
-  --sans: "Courier Prime", Courier, monospace;
+  --serif: "EB Garamond", Garamond, "Times New Roman", serif;
+  /* section headers: TeX Gyre Heros in the CV is a Helvetica clone */
+  --sans: "Helvetica Neue", Helvetica, Arial, "TeX Gyre Heros", sans-serif;
 }
 
 * {
@@ -21,9 +42,9 @@ body {
   background: var(--bg);
   color: var(--text);
   font-family: var(--serif);
-  font-size: 1.05rem;
+  font-size: 1.2rem;
   font-weight: 400;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
 a {
@@ -48,7 +69,7 @@ a:hover {
   font-family: var(--serif);
   color: var(--text);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.15rem;
   margin-right: auto;
 }
 
@@ -84,7 +105,7 @@ main {
 
 .home-name {
   font-family: var(--serif);
-  font-size: 2rem;
+  font-size: 2.6rem;
   font-weight: 700;
   margin: 0 0 0.6rem;
 }
@@ -92,7 +113,7 @@ main {
 .home-subtitle {
   font-family: var(--serif);
   color: var(--text-light);
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   font-weight: 400;
   font-style: italic;
   margin: 0;

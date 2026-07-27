@@ -127,8 +127,8 @@ a:hover {
 .brand-subtitle {
   font-family: var(--serif);
   color: var(--text-light);
-  font-size: 1.1rem;
-  font-weight: 700;
+  font-size: 1.25rem;
+  font-weight: 400;
   font-style: italic;
   margin: 0;
 }

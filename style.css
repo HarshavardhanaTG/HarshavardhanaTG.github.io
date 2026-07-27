@@ -69,7 +69,11 @@ body.has-bg {
   -webkit-hyphens: auto;
   -ms-hyphens: auto;
   hyphens: auto;
-  margin: 0;
+  margin: 0 0 1rem;
+}
+
+.home-statement p:last-child {
+  margin-bottom: 0;
 }
 
 .home-statement .statement-emphasis {

@@ -80,10 +80,6 @@ body.has-bg {
   font-style: italic;
 }
 
-.home-statement .institute-caps {
-  font-variant-caps: small-caps;
-}
-
 body.has-bg::before {
   content: "";
   position: absolute;

@@ -204,6 +204,8 @@ h1.page-title {
    data collection, not just modeling. */
 .research-section {
   margin-bottom: 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
 }
 
 .research-section-header {
@@ -213,8 +215,11 @@ h1.page-title {
   gap: 1.5rem;
 }
 
+.research-section h2 {
+  margin: 0 0 0.75rem;
+}
+
 .research-section-header h2 {
-  margin: 2rem 0 0.75rem;
   flex: 1;
 }
 

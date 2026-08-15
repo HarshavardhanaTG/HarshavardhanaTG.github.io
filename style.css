@@ -186,6 +186,55 @@ h1.page-title {
   font-style: italic;
 }
 
+/* Research page: each project section pairs its heading with a circular
+   subject-count badge, to foreground that this is ground-up human-subject
+   data collection, not just modeling. */
+.research-section {
+  margin-bottom: 1rem;
+}
+
+.research-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.research-section-header h2 {
+  margin: 2rem 0 0.75rem;
+  flex: 1;
+}
+
+.subject-badge {
+  flex-shrink: 0;
+  width: 84px;
+  height: 84px;
+  border-radius: 50%;
+  border: 2px solid var(--accent);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25rem;
+}
+
+.subject-count {
+  font-family: var(--sans);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.subject-label {
+  font-family: var(--sans);
+  font-size: 0.55rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-light);
+  margin-top: 0.2rem;
+}
+
 /* Publications — mirrors the CV's \pub macro: year label column, then
    the author line, then title + venue indented one further step in */
 .pub {

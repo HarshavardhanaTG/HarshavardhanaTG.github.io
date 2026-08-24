@@ -205,7 +205,7 @@ h1.page-title {
 .research-section {
   margin-bottom: 1rem;
   padding-top: 1.5rem;
-  border-top: 4px solid var(--border);
+  border-top: 4px solid var(--text);
 }
 
 .research-section-header {

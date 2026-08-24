@@ -253,6 +253,14 @@ h1.page-title {
   margin-top: 0.2rem;
 }
 
+.research-video {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin-top: 0.5rem;
+}
+
 /* Publications — mirrors the CV's \pub macro: year label column, then
    the author line, then title + venue indented one further step in */
 .pub {

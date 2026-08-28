@@ -199,8 +199,8 @@ h1.page-title {
   font-style: italic;
 }
 
-.highlight-blue {
-  color: #4da6ff;
+.highlight-accent {
+  color: var(--accent);
 }
 
 /* Research page: each project section pairs its heading with a circular

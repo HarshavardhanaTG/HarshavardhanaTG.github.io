@@ -172,7 +172,7 @@ main {
 /* Interior pages */
 h1.page-title {
   font-family: var(--sans);
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 1.75rem;
@@ -180,7 +180,7 @@ h1.page-title {
 
 .page-body h2 {
   font-family: var(--sans);
-  font-size: 0.85rem;
+  font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
   margin: 2rem 0 0.75rem;

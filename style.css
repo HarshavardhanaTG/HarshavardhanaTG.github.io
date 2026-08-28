@@ -199,6 +199,10 @@ h1.page-title {
   font-style: italic;
 }
 
+.highlight-blue {
+  color: #4da6ff;
+}
+
 /* Research page: each project section pairs its heading with a circular
    subject-count badge, to foreground that this is ground-up human-subject
    data collection, not just modeling. */

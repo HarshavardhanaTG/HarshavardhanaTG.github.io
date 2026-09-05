@@ -211,6 +211,7 @@ h1.page-title.page-title-lg {
    subject-count badge, to foreground that this is ground-up human-subject
    data collection, not just modeling. */
 .research-section {
+  position: relative;
   margin-bottom: 1rem;
   padding-top: 1.5rem;
   border-top: 4px solid var(--text);
@@ -269,14 +270,25 @@ h1.page-title.page-title-lg {
   margin-top: 0.5rem;
 }
 
-/* On wide viewports there's enough room in main's side margin to float the
-   video out into it, beside the text, instead of stacking it below. Below
-   this width there's no margin to put it in, so it just stacks as normal. */
-@media (min-width: 1600px) {
+/* main's side margin only exists once the viewport is wider than main's own
+   1000px + padding, so below that there's nowhere to put the video but in
+   the normal flow. Above it, pull the video fully out of the flow into that
+   empty margin — position: absolute (not float) so it has zero effect on
+   the paragraph text beside it; the text stays at its normal full width. */
+@media (min-width: 1280px) {
   .research-video {
-    float: left;
-    width: 220px;
-    margin: 0.25rem 1.5rem 1rem -260px;
+    position: absolute;
+    top: 0;
+    left: -150px;
+    width: 130px;
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1700px) {
+  .research-video {
+    left: -270px;
+    width: 240px;
   }
 }
 

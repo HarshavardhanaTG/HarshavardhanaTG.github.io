@@ -269,6 +269,17 @@ h1.page-title.page-title-lg {
   margin-top: 0.5rem;
 }
 
+/* On wide viewports there's enough room in main's side margin to float the
+   video out into it, beside the text, instead of stacking it below. Below
+   this width there's no margin to put it in, so it just stacks as normal. */
+@media (min-width: 1600px) {
+  .research-video {
+    float: left;
+    width: 220px;
+    margin: 0.25rem 1.5rem 1rem -260px;
+  }
+}
+
 /* Publications — mirrors the CV's \pub macro: year label column, then
    the author line, then title + venue indented one further step in */
 .pub {

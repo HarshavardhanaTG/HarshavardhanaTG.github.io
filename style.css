@@ -276,19 +276,32 @@ h1.page-title.page-title-lg {
    empty margin — position: absolute (not float) so it has zero effect on
    the paragraph text beside it; the text stays at its normal full width. */
 @media (min-width: 1280px) {
+  /* Shift the whole content column right (staying within what's actually
+     available at 1280px, the narrowest width this applies at) so the freed
+     space on the left can hold a bigger video than the margin alone allowed. */
+  main.main-shift-right {
+    max-width: none;
+    margin-left: 240px;
+    margin-right: 0;
+  }
+
   .research-video {
     position: absolute;
     top: 0;
-    left: -150px;
-    width: 130px;
+    left: -220px;
+    width: 200px;
     margin-top: 0;
   }
 }
 
 @media (min-width: 1700px) {
+  main.main-shift-right {
+    margin-left: 380px;
+  }
+
   .research-video {
-    left: -270px;
-    width: 240px;
+    left: -350px;
+    width: 320px;
   }
 }
 

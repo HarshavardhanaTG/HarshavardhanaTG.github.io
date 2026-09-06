@@ -270,38 +270,38 @@ h1.page-title.page-title-lg {
   margin-top: 0.5rem;
 }
 
-/* main's side margin only exists once the viewport is wider than main's own
-   1000px + padding, so below that there's nowhere to put the video but in
-   the normal flow. Above it, pull the video fully out of the flow into that
-   empty margin — position: absolute (not float) so it has zero effect on
-   the paragraph text beside it; the text stays at its normal full width. */
+/* Below 1280px there's no room to spare, so the video just stacks in normal
+   flow. Above it, right-anchor the whole content column at a fixed,
+   comfortable reading width, freeing the entire left side of the screen for
+   video/images. The video's `left` is computed from 100vw (the true
+   viewport width), not from the shifted content column, so it always
+   resolves to a fixed inset from the real screen edge — it can't drift
+   off-screen at any width above the breakpoint, unlike a fixed px offset
+   measured from a column whose position itself moves with viewport width. */
 @media (min-width: 1280px) {
-  /* Shift the whole content column right (staying within what's actually
-     available at 1280px, the narrowest width this applies at) so the freed
-     space on the left can hold a bigger video than the margin alone allowed. */
   main.main-shift-right {
-    max-width: none;
-    margin-left: 240px;
+    max-width: 750px;
+    margin-left: auto;
     margin-right: 0;
   }
 
   .research-video {
     position: absolute;
     top: 0;
-    left: -220px;
-    width: 200px;
+    left: calc(750px - 100vw + 2rem);
+    width: 320px;
     margin-top: 0;
   }
 }
 
 @media (min-width: 1700px) {
   main.main-shift-right {
-    margin-left: 380px;
+    max-width: 820px;
   }
 
   .research-video {
-    left: -350px;
-    width: 320px;
+    left: calc(820px - 100vw + 2rem);
+    width: 450px;
   }
 }
 

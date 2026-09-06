@@ -180,6 +180,7 @@ h1.page-title {
 
 h1.page-title.page-title-lg {
   font-size: 2rem;
+  margin-left: calc(440px + 1.5rem);
 }
 
 .page-body h2 {
@@ -283,6 +284,7 @@ h1.page-title.page-title-lg {
 .research-video {
   grid-column: 1;
   grid-row: 1 / -1;
+  align-self: center;
   width: 100%;
   height: auto;
   margin: 0;
@@ -316,6 +318,10 @@ main.main-shift-right {
   }
 
   .page-body > p {
+    margin-left: 0;
+  }
+
+  h1.page-title.page-title-lg {
     margin-left: 0;
   }
 }

@@ -283,10 +283,16 @@ h1.page-title.page-title-lg {
 
 .research-video {
   grid-column: 1;
-  /* Row 1 is the heading — skip it and span only the paragraph rows below,
-     so centering lines the video up with the text block, not with the
-     (much shorter) heading row mixed in. */
-  grid-row: 2 / -1;
+  /* Row 1 is the heading — skip it and span the paragraph rows below, so
+     centering lines the video up with the text block, not with the (much
+     shorter) heading row mixed in. `span <N>` rather than `/ -1`: negative
+     line indices only resolve against an explicit grid-template-rows, which
+     this grid doesn't have (rows are auto-generated from content), so `-1`
+     doesn't reliably mean "the last row" here — span a generous fixed
+     count instead, which safely covers any realistic number of paragraphs
+     without creating visible extra rows (row-gap is 0, so unused span
+     doesn't add space). */
+  grid-row: 2 / span 20;
   align-self: center;
   width: 100%;
   height: auto;

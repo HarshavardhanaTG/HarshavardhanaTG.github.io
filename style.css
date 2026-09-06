@@ -283,7 +283,10 @@ h1.page-title.page-title-lg {
 
 .research-video {
   grid-column: 1;
-  grid-row: 1 / -1;
+  /* Row 1 is the heading — skip it and span only the paragraph rows below,
+     so centering lines the video up with the text block, not with the
+     (much shorter) heading row mixed in. */
+  grid-row: 2 / -1;
   align-self: center;
   width: 100%;
   height: auto;

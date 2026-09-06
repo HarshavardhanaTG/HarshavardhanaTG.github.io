@@ -216,6 +216,13 @@ h1.page-title.page-title-lg {
   grid-template-columns: 440px 1fr;
   column-gap: 1.5rem;
   margin-bottom: 1rem;
+}
+
+/* The divider line lives on the heading (text column only), not the section
+   itself, so it's exactly as wide as the text rather than spanning the
+   video column too. */
+.research-section > .research-section-header,
+.research-section > h2 {
   padding-top: 1.5rem;
   border-top: 4px solid var(--text);
 }
@@ -299,18 +306,8 @@ h1.page-title.page-title-lg {
   margin: 0;
 }
 
-/* Left-align the content column instead of centering/right-anchoring it —
-   margin-right: auto means any unused width just sits empty on the right. */
-/* Fluid width instead of a fixed max-width: at any viewport this leaves
-   exactly the same right-hand margin the centered pages show on their own
-   right side ((100vw - 1000px) / 2), rather than dumping the whole leftover
-   width onto the right just because the column is left-aligned. Below
-   1000px wide it's simply non-binding and main fills 100% as normal. */
-main.main-shift-right {
-  max-width: calc(50vw + 500px);
-  margin-left: 0;
-  margin-right: auto;
-}
+/* Centered the same way as every other page (main's base rule already does
+   this) — the left-aligned/fluid-width experiment is gone. */
 
 /* Below this width there's no room for a 340px video column beside readable
    text, so collapse to one column and let the video stack above the text

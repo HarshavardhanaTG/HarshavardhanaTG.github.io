@@ -296,10 +296,11 @@ h1.page-title.page-title-lg {
   margin-top: 0.2rem;
 }
 
-.research-video {
+.research-video,
+.research-media {
   grid-column: 1;
   /* Row 1 is the heading — skip it and span the paragraph rows below, so
-     centering lines the video up with the text block, not with the (much
+     centering lines the media up with the text block, not with the (much
      shorter) heading row mixed in. `span <N>` rather than `/ -1`: negative
      line indices only resolve against an explicit grid-template-rows, which
      this grid doesn't have (rows are auto-generated from content), so `-1`
@@ -309,23 +310,40 @@ h1.page-title.page-title-lg {
      doesn't add space). */
   grid-row: 2 / span 20;
   align-self: center;
+}
+
+.research-video {
   width: 100%;
   height: auto;
   margin: 0;
 }
 
+.research-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.research-caption {
+  font-family: var(--sans);
+  font-size: 0.75rem;
+  color: var(--text-light);
+  margin: 0.5rem 0 0;
+}
+
 /* Centered the same way as every other page (main's base rule already does
    this) — the left-aligned/fluid-width experiment is gone. */
 
-/* Below this width there's no room for a 340px video column beside readable
-   text, so collapse to one column and let the video stack above the text
-   like normal flow. */
+/* Below this width there's no room for a 340px video/image column beside
+   readable text, so collapse to one column and let the media stack above
+   the text like normal flow. */
 @media (max-width: 899px) {
   .research-section {
     grid-template-columns: 1fr;
   }
 
-  .research-video {
+  .research-video,
+  .research-media {
     grid-column: 1;
     grid-row: auto;
     margin-bottom: 1rem;

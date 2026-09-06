@@ -212,7 +212,7 @@ h1.page-title.page-title-lg {
    data collection, not just modeling. */
 .research-section {
   display: grid;
-  grid-template-columns: 340px 1fr;
+  grid-template-columns: 440px 1fr;
   column-gap: 1.5rem;
   margin-bottom: 1rem;
   padding-top: 1.5rem;
@@ -232,7 +232,7 @@ h1.page-title.page-title-lg {
    grid, so they get the same indent applied directly to line their text up
    with the section text column below. */
 .page-body > p {
-  margin-left: calc(340px + 1.5rem);
+  margin-left: calc(440px + 1.5rem);
 }
 
 .research-section-header {
@@ -290,7 +290,13 @@ h1.page-title.page-title-lg {
 
 /* Left-align the content column instead of centering/right-anchoring it —
    margin-right: auto means any unused width just sits empty on the right. */
+/* Fluid width instead of a fixed max-width: at any viewport this leaves
+   exactly the same right-hand margin the centered pages show on their own
+   right side ((100vw - 1000px) / 2), rather than dumping the whole leftover
+   width onto the right just because the column is left-aligned. Below
+   1000px wide it's simply non-binding and main fills 100% as normal. */
 main.main-shift-right {
+  max-width: calc(50vw + 500px);
   margin-left: 0;
   margin-right: auto;
 }
@@ -298,7 +304,7 @@ main.main-shift-right {
 /* Below this width there's no room for a 340px video column beside readable
    text, so collapse to one column and let the video stack above the text
    like normal flow. */
-@media (max-width: 699px) {
+@media (max-width: 899px) {
   .research-section {
     grid-template-columns: 1fr;
   }

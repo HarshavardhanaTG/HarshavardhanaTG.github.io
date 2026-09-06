@@ -211,9 +211,28 @@ h1.page-title.page-title-lg {
    subject-count badge, to foreground that this is ground-up human-subject
    data collection, not just modeling. */
 .research-section {
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  column-gap: 1.5rem;
   margin-bottom: 1rem;
   padding-top: 1.5rem;
   border-top: 4px solid var(--text);
+}
+
+/* Every section gets the same two columns, whether or not it actually has
+   a video/image — that's what keeps the text column aligned consistently
+   down the whole page, instead of drifting left in sections with no media. */
+.research-section > .research-section-header,
+.research-section > h2,
+.research-section > p {
+  grid-column: 2;
+}
+
+/* Intro paragraphs above the sections aren't inside a .research-section
+   grid, so they get the same indent applied directly to line their text up
+   with the section text column below. */
+.page-body > p {
+  margin-left: calc(340px + 1.5rem);
 }
 
 .research-section-header {
@@ -262,11 +281,11 @@ h1.page-title.page-title-lg {
 }
 
 .research-video {
-  display: block;
+  grid-column: 1;
+  grid-row: 1 / -1;
   width: 100%;
-  max-width: 100%;
   height: auto;
-  margin: 0 0 1rem;
+  margin: 0;
 }
 
 /* Left-align the content column instead of centering/right-anchoring it —
@@ -276,15 +295,22 @@ main.main-shift-right {
   margin-right: auto;
 }
 
-/* Below this width there's no room for the video and text side by side, so
-   it just stacks above the text in normal flow. Above it, float the video
-   left so the text wraps immediately beside it — no gap, no absolute
-   positioning, just the standard image-with-wrapped-text layout. */
-@media (min-width: 900px) {
+/* Below this width there's no room for a 340px video column beside readable
+   text, so collapse to one column and let the video stack above the text
+   like normal flow. */
+@media (max-width: 699px) {
+  .research-section {
+    grid-template-columns: 1fr;
+  }
+
   .research-video {
-    float: left;
-    width: 340px;
-    margin: 0.25rem 1.5rem 1rem 0;
+    grid-column: 1;
+    grid-row: auto;
+    margin-bottom: 1rem;
+  }
+
+  .page-body > p {
+    margin-left: 0;
   }
 }
 

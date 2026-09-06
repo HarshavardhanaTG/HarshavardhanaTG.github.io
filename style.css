@@ -169,6 +169,14 @@ main {
   padding: 2rem 2rem 4rem;
 }
 
+/* Research page only: wider (but still centered, same as every other page)
+   so the text column next to the video comes out to ~860px — the same
+   width Publications' text uses — instead of being squeezed down by the
+   video column sharing the standard 1000px box. */
+main.main-wide {
+  max-width: 1400px;
+}
+
 /* Interior pages */
 h1.page-title {
   font-family: var(--sans);

@@ -528,7 +528,7 @@ h1.page-title.page-title-lg {
 }
 
 .cer-table figcaption {
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   text-align: left;
   margin-bottom: 0.6rem;
 }
@@ -591,4 +591,10 @@ h1.page-title.page-title-lg {
 
 .cer-table thead th[rowspan] {
   vertical-align: bottom;
+}
+
+/* Only one sub-column (Test CER) per group, so center values under it */
+.cer-table thead tr.sub th,
+.cer-table tbody td {
+  text-align: center;
 }

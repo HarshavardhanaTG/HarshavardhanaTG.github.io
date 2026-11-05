@@ -422,3 +422,66 @@ h1.page-title.page-title-lg {
   white-space: nowrap;
   margin-left: auto;
 }
+
+/* Blog — index list mirrors the Publications layout (date column + entry) */
+.post-item {
+  display: flex;
+  gap: 1.25rem;
+  padding: 1.25rem 0;
+}
+
+.post-item:first-of-type {
+  padding-top: 0;
+}
+
+.post-date {
+  flex-shrink: 0;
+  width: 3.5rem;
+}
+
+.post-main {
+  flex: 1;
+  min-width: 0;
+}
+
+.post-title {
+  margin: 0 0 0.15rem;
+}
+
+.post-title a {
+  color: var(--text);
+}
+
+.post-title a:hover {
+  color: var(--accent);
+}
+
+.post-summary {
+  margin: 0;
+  color: var(--text-light);
+}
+
+/* Blog post page */
+.post-back {
+  font-family: var(--sans);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
+}
+
+.post-heading {
+  font-family: var(--sans);
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.post-meta {
+  color: var(--text-light);
+  margin: 0.25rem 0 2rem;
+}
+
+.post-body {
+  max-width: 760px;
+}

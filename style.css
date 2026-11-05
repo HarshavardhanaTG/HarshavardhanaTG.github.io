@@ -517,3 +517,78 @@ h1.page-title.page-title-lg {
   text-align: left;
   margin-bottom: 0.5rem;
 }
+
+/* Blog: CER results table, styled after the booktabs tables in the
+   emg2qwerty paper: caption above, heavy top/bottom rules, thin rules
+   between rows, grouped column headers. Each cell shows the covariance
+   result with the spectrogram baseline beneath it in grey. */
+.cer-table {
+  margin: 0 0 1.5rem;
+  overflow-x: auto;
+}
+
+.cer-table figcaption {
+  font-size: 0.95rem;
+  text-align: left;
+  margin-bottom: 0.6rem;
+}
+
+.cer-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-top: 2px solid var(--text);
+  border-bottom: 2px solid var(--text);
+}
+
+.cer-table th,
+.cer-table td {
+  padding: 0.35rem 0.75rem;
+  font-weight: 400;
+  text-align: right;
+  vertical-align: middle;
+}
+
+.cer-table th:first-child {
+  text-align: left;
+}
+
+.cer-table thead tr.group th:not(:first-child) {
+  text-align: center;
+  padding-bottom: 0.15rem;
+}
+
+/* short rule under each group header, like \cmidrule */
+.cer-table thead tr.group th:not(:first-child) {
+  background-image: linear-gradient(var(--text), var(--text));
+  background-size: calc(100% - 1rem) 1px;
+  background-position: center bottom;
+  background-repeat: no-repeat;
+}
+
+.cer-table thead tr.sub th {
+  padding-top: 0.15rem;
+}
+
+.cer-table thead tr:last-child th,
+.cer-table thead th[rowspan] {
+  border-bottom: 1px solid var(--text);
+}
+
+.cer-table tbody tr + tr th,
+.cer-table tbody tr + tr td {
+  border-top: 1px solid var(--border);
+}
+
+.cer-table .cer {
+  display: block;
+}
+
+.cer-table .cer-base {
+  display: block;
+  font-size: 0.85em;
+  color: var(--text-light);
+}
+
+.cer-table thead th[rowspan] {
+  vertical-align: bottom;
+}

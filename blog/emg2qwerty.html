@@ -7,7 +7,7 @@
 <title>emg2qwerty: Covariance vs. Spectrogram · Harsha Gowda</title>
 <meta name="description" content="emg2qwerty — a blog post by Harsha Gowda." />
 <link rel="icon" type="image/png" href="/assets/img/brain.png" />
-<link rel="stylesheet" href="/style.css?v=69" />
+<link rel="stylesheet" href="/style.css?v=71" />
 </head>
 <body>
 <header class="site-header">
@@ -36,6 +36,21 @@
     <p>Here, we investigate whether covariance matrices provide a more effective and physiologically grounded representation for sEMG decoding. Unlike spectrograms, which characterize the frequency content of individual channels, covariance matrices capture the relationships between signals recorded across multiple channels, reflecting patterns of coordinated muscle activity. These matrices are symmetric positive definite (SPD), providing a structured representation of multichannel muscle activity.</p>
 
     <p>To isolate the effect of the input representation, we retain the baseline model architecture and training procedures from <a href="#ref-1">[1]</a>, replacing only the spectrogram features with covariance-based representations. This modification reduces character error rates (CER) across all three evaluation settings: (1) zero-shot decoding using a generic model trained across individuals, (2) personalized models trained from scratch, and (3) personalized models obtained by fine-tuning a generic pretrained model.</p>
+
+    <figure class="cer-table">
+      <figcaption>Table 1: Mean test character error rate (CER, %) across the 8 test users. Lower is better. Grey values are the spectrogram baselines from <a href="#ref-1">[1]</a>.</figcaption>
+      <table>
+        <thead>
+          <tr class="group"><th rowspan="2" scope="col">Model benchmark</th><th scope="colgroup">No LM</th><th scope="colgroup">6-gram char-LM</th></tr>
+          <tr class="sub"><th scope="col">Test CER</th><th scope="col">Test CER</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Generic (no personalization)</th><td><span class="cer">50.49</span><span class="cer-base">55.38</span></td><td><span class="cer">44.56</span><span class="cer-base">51.78</span></td></tr>
+          <tr><th scope="row">Personalized (random-init)</th><td><span class="cer">12.85</span><span class="cer-base">15.38</span></td><td><span class="cer">6.97</span><span class="cer-base">9.55</span></td></tr>
+          <tr><th scope="row">Personalized (finetuned)</th><td><span class="cer">9.90</span><span class="cer-base">11.28</span></td><td><span class="cer">5.40</span><span class="cer-base">6.95</span></td></tr>
+        </tbody>
+      </table>
+    </figure>
 
     <p><strong>Notably, our personalized models trained from scratch achieve performance comparable to spectrogram-based models pretrained on nearly 100 individuals and subsequently fine-tuned on individual-specific data.</strong></p>
 

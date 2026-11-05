@@ -478,9 +478,13 @@ h1.page-title.page-title-lg {
   margin: 0;
 }
 
+.post-authors {
+  margin: 0.5rem 0 0;
+}
+
 .post-meta {
   color: var(--text-light);
-  margin: 0.25rem 0 2rem;
+  margin: 0 0 2rem;
 }
 
 

@@ -7,7 +7,7 @@
 <title>emg2qwerty: Covariance vs. Spectrogram · Harsha Gowda</title>
 <meta name="description" content="emg2qwerty — a blog post by Harsha Gowda." />
 <link rel="icon" type="image/png" href="/assets/img/brain.png" />
-<link rel="stylesheet" href="/style.css?v=75" />
+<link rel="stylesheet" href="/style.css?v=76" />
 </head>
 <body>
 <header class="site-header">
@@ -39,16 +39,16 @@
     <p>To isolate the effect of the input representation, we retain the baseline model architecture and training procedures from <a href="#ref-1">[1]</a>, replacing only the spectrogram features with covariance-based representations. This modification reduces character error rates (CER) across all three evaluation settings: (1) zero-shot decoding using a generic model trained across individuals, (2) personalized models trained from scratch, and (3) personalized models obtained by fine-tuning a generic pretrained model.</p>
 
     <figure class="cer-table">
-      <figcaption>Table 1: Mean test character error rate (CER, %) across the 8 test users. Lower is better. Grey values are the spectrogram baselines from <a href="#ref-1">[1]</a>. Percentages are the relative reduction in CER over the baseline.</figcaption>
+      <figcaption>Table 1: Mean test character error rate (CER, %) across the 8 test users. Lower is better. Grey values are the spectrogram baselines from <a href="#ref-1">[1]</a>. Percentages are the relative reduction in CER over the baseline. All improvements are statistically significant (one-sided paired <em>t</em>-test across the 8 users, <em>p</em> &lt; 0.05).</figcaption>
       <table>
         <thead>
           <tr class="group"><th rowspan="2" scope="col">Model benchmark</th><th scope="colgroup">No LM</th><th scope="colgroup">6-gram char-LM</th></tr>
           <tr class="sub"><th scope="col">Test CER</th><th scope="col">Test CER</th></tr>
         </thead>
         <tbody>
-          <tr><th scope="row">Generic (no personalization)</th><td><span class="cer">50.49</span><span class="cer-base">55.38</span><span class="cer-gain">&minus;8.8%</span></td><td><span class="cer">44.56</span><span class="cer-base">51.78</span><span class="cer-gain">&minus;13.9%</span></td></tr>
-          <tr><th scope="row">Personalized (random-init)</th><td><span class="cer">12.85</span><span class="cer-base">15.38</span><span class="cer-gain">&minus;16.4%</span></td><td><span class="cer">6.97</span><span class="cer-base">9.55</span><span class="cer-gain">&minus;27.0%</span></td></tr>
-          <tr><th scope="row">Personalized (finetuned)</th><td><span class="cer">9.90</span><span class="cer-base">11.28</span><span class="cer-gain">&minus;12.2%</span></td><td><span class="cer">5.40</span><span class="cer-base">6.95</span><span class="cer-gain">&minus;22.3%</span></td></tr>
+          <tr><th scope="row">Generic (no personalization)</th><td><span class="cer">50.49</span><span class="cer-sub"><span class="cer-base">55.38</span> <span class="cer-gain">&minus;8.8%</span></span></td><td><span class="cer">44.56</span><span class="cer-sub"><span class="cer-base">51.78</span> <span class="cer-gain">&minus;13.9%</span></span></td></tr>
+          <tr><th scope="row">Personalized (random-init)</th><td><span class="cer">12.85</span><span class="cer-sub"><span class="cer-base">15.38</span> <span class="cer-gain">&minus;16.4%</span></span></td><td><span class="cer">6.97</span><span class="cer-sub"><span class="cer-base">9.55</span> <span class="cer-gain">&minus;27.0%</span></span></td></tr>
+          <tr><th scope="row">Personalized (finetuned)</th><td><span class="cer">9.90</span><span class="cer-sub"><span class="cer-base">11.28</span> <span class="cer-gain">&minus;12.2%</span></span></td><td><span class="cer">5.40</span><span class="cer-sub"><span class="cer-base">6.95</span> <span class="cer-gain">&minus;22.3%</span></span></td></tr>
         </tbody>
       </table>
     </figure>

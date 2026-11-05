@@ -587,9 +587,12 @@ h1.page-title.page-title-lg {
   display: block;
 }
 
-.cer-table .cer-base {
+.cer-table .cer-sub {
   display: block;
   font-size: 0.85em;
+}
+
+.cer-table .cer-base {
   color: var(--text-light);
 }
 
@@ -604,7 +607,6 @@ h1.page-title.page-title-lg {
 }
 
 .cer-table .cer-gain {
-  display: block;
-  font-size: 0.85em;
+  margin-left: 0.3em;
   color: var(--accent);
 }

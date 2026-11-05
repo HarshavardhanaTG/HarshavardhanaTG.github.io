@@ -483,9 +483,6 @@ h1.page-title.page-title-lg {
   margin: 0.25rem 0 2rem;
 }
 
-.post-body {
-  max-width: 760px;
-}
 
 /* GitHub link under the post heading: icon with label beneath */
 .post-code {

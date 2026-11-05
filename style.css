@@ -508,3 +508,15 @@ h1.page-title.page-title-lg {
   font-weight: 700;
   text-transform: uppercase;
 }
+
+.post-body {
+  text-align: justify;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
+.post-body .post-ref {
+  font-size: 0.95rem;
+  text-align: left;
+  margin-bottom: 0.5rem;
+}

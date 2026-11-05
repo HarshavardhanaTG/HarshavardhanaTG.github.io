@@ -7,7 +7,7 @@
 <title>emg2qwerty: Covariance vs. Spectrogram · Harsha Gowda</title>
 <meta name="description" content="emg2qwerty — a blog post by Harsha Gowda." />
 <link rel="icon" type="image/png" href="/assets/img/brain.png" />
-<link rel="stylesheet" href="/style.css?v=66" />
+<link rel="stylesheet" href="/style.css?v=67" />
 </head>
 <body>
 <header class="site-header">
@@ -31,8 +31,19 @@
   </a>
 
   <div class="page-body post-body">
-    <!-- Write the post here. Use <h2> for section headings, <p> for paragraphs. -->
-    <p>Post coming soon.</p>
+    <p>Sivakumar et al. <a href="#ref-1">[1]</a> introduced <em>emg2qwerty</em>, a large-scale dataset for decoding keystrokes from surface electromyography (sEMG) signals. In this setting, individuals wear sEMG wristbands and perform touch-typing movements on a QWERTY keyboard, while the recorded muscle activity is used to decode the typed characters. The baseline models in <a href="#ref-1">[1]</a> represent sEMG signals using spectrograms, a representation widely used in audio processing.</p>
+
+    <p>Here, we investigate whether covariance matrices provide a more effective representation for sEMG decoding. Unlike spectrograms, which characterize the frequency content of individual channels, covariance matrices capture relationships between signals recorded across multiple channels. These matrices are symmetric positive definite (SPD), providing a structured representation of multichannel muscle activity.</p>
+
+    <p>To isolate the effect of the input representation, we retain the baseline model architecture and training procedures from <a href="#ref-1">[1]</a>, replacing only the spectrogram features with covariance-based representations. This modification reduces character error rates (CER) across all three evaluation settings: (1) zero-shot decoding using a generic model trained across individuals, (2) personalized models trained from scratch, and (3) personalized models obtained by fine-tuning a generic pretrained model.</p>
+
+    <p><strong>Notably, our personalized models trained from scratch achieve performance comparable to spectrogram-based models pretrained on nearly 100 individuals and subsequently fine-tuned on individual-specific data.</strong></p>
+
+    <p>Overall, our findings demonstrate that covariance-based representations consistently outperform spectrograms for sEMG keystroke decoding. More broadly, they highlight how representations that capture relationships between multiple sEMG channels can improve data efficiency, enabling models to learn more effectively from individual-specific recordings.</p>
+
+    <h2>References</h2>
+    <p class="post-ref" id="ref-1">[1] Sivakumar, Viswanath, et al. &ldquo;emg2qwerty: A Large Dataset with Baselines for Touch Typing Using Surface Electromyography.&rdquo; <em>Advances in Neural Information Processing Systems</em>, 37 (2024): 91373&ndash;91389.</p>
+    <p class="post-ref" id="ref-2">[2] Hadidi, Nima, et al. &ldquo;SplashNet: Split-and-Share Encoders for Accurate and Efficient Typing with Surface Electromyography.&rdquo; <em>Advances in Neural Information Processing Systems</em>, 38 (2026): 166117&ndash;166141.</p>
   </div>
 </main>
 

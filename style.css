@@ -247,7 +247,7 @@ h1.page-title.page-title-lg {
 /* Intro paragraphs above the sections aren't inside a .research-section
    grid, so they get the same indent applied directly to line their text up
    with the section text column below. */
-.page-body > p {
+.main-wide .page-body > p {
   margin-left: calc(440px + 1.5rem);
 }
 
@@ -348,7 +348,7 @@ h1.page-title.page-title-lg {
     margin-bottom: 1rem;
   }
 
-  .page-body > p {
+  .main-wide .page-body > p {
     margin-left: 0;
   }
 

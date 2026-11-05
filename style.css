@@ -602,3 +602,9 @@ h1.page-title.page-title-lg {
 .cer-table tbody td {
   text-align: center;
 }
+
+.cer-table .cer-gain {
+  display: block;
+  font-size: 0.85em;
+  color: var(--accent);
+}

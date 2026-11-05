@@ -39,7 +39,7 @@
     <p>To isolate the effect of the input representation, we retain the baseline model architecture and training procedures from <a href="#ref-1">[1]</a>, replacing only the spectrogram features with covariance-based representations. This modification reduces character error rates (CER) across all three evaluation settings: (1) zero-shot decoding using a generic model trained across individuals, (2) personalized models trained from scratch, and (3) personalized models obtained by fine-tuning a generic pretrained model.</p>
 
     <figure class="cer-table">
-      <figcaption>Table 1: Mean test character error rate (CER, %) across the 8 test users. Lower is better. Grey values are the spectrogram baselines from <a href="#ref-1">[1]</a>. Percentages are the relative reduction in CER over the baseline. All improvements are statistically significant (one-sided paired <em>t</em>-test across the 8 users, <em>p</em> &lt; 0.05).</figcaption>
+      <figcaption>Table 1: Mean test character error rate (CER, %) across the 8 test users. Lower is better. Grey values are the spectrogram baselines from <a href="#ref-1">[1]</a>. Percentages are the relative reduction in CER over the baseline. All improvements are statistically significant.</figcaption>
       <table>
         <thead>
           <tr class="group"><th rowspan="2" scope="col">Model benchmark</th><th scope="colgroup">No LM</th><th scope="colgroup">6-gram char-LM</th></tr>

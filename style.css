@@ -474,6 +474,7 @@ h1.page-title.page-title-lg {
   font-family: var(--sans);
   font-size: 2rem;
   font-weight: 700;
+  text-transform: uppercase;
   margin: 0;
 }
 
